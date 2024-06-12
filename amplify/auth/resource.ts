@@ -6,7 +6,7 @@ export const auth = defineAuth({
   },
   multifactor: {
     mode: 'REQUIRED',
-    sms: true
+    sms: true,
   },
-  accountRecovery: "PHONE_WITHOUT_MFA_AND_EMAIL"
+  accountRecovery: "PHONE_ONLY_WITHOUT_MFA", // Adjusted to be compatible with SMS MFA
 });
