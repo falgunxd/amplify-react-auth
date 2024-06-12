@@ -1,0 +1,28 @@
+.auth-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .auth-container .left,
+  .auth-container .right {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label,
+  input {
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    width: 100px;
+    align-self: flex-end;
+  }
+  
