@@ -8,5 +8,5 @@ export const auth = defineAuth({
     mode: 'REQUIRED',
     sms: true,
   },
-  accountRecovery: "PHONE_ONLY_WITHOUT_MFA", // Adjusted to be compatible with SMS MFA
+  accountRecovery: "NONE", 
 });
