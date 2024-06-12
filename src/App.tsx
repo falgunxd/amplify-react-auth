@@ -27,7 +27,7 @@ export default function App() {
     try {
       await signUp({
         username: phone_number,
-        password: phone_number,
+        password: "Aa@#"+phone_number,
         options: {
           userAttributes: { phone_number }
         }
@@ -63,7 +63,7 @@ export default function App() {
     try {
       const { nextStep } = await signIn({
         username: phone_number,
-        password: phone_number,
+        password: "Aa@#"+phone_number,
       });
       if (nextStep && nextStep.signInStep === 'CONFIRM_SIGN_IN_WITH_SMS_CODE') {
         setSignInStep('confirm');
